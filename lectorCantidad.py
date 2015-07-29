@@ -1,4 +1,4 @@
-numero = input('Cual numeron quieres convertir a letra: ')
+numero = input('Cual(es) numero(s) quieres convertir a letra: ')
 entero = 0
 decenas = 0
 cien = 0
