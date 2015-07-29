@@ -1,4 +1,4 @@
-numero = input('Cual(es) numero(s) quieres convertir a letra: ')
+numero = input('Cual numero quieres convertir a letra: ')
 entero = 0
 decenas = 0
 cien = 0
@@ -8,7 +8,11 @@ concatenar1 = ""
 concatenar2 = ""
 concatenar3 = ""
 concatenar4 = ""
-if(len(numero) == 2):
+if(len(numero) == 1):
+	for numeros in numero:
+		if(contador==1):
+			entero = int(numeros)	
+elif(len(numero) == 2):
 	for numeros in numero:
 		if(contador==1):
 			decenas = int(numeros)
@@ -27,13 +31,13 @@ elif(len(numero)==3):
 else:
 	for numeros in numero:
 		if(contador==1):
-			entero = int(numeros)
+			miles = int(numeros)
 		elif(contador==2):
-			decenas = int(numeros)
-		elif(contador==3):
 			cien = int(numeros)
+		elif(contador==3):
+			decenas = int(numeros)
 		elif(contador==4):
-			miles =int(numeros)
+			entero =int(numeros)
 		contador+=1
 if(entero+decenas+cien+miles == 0):
 	print ("cero")
